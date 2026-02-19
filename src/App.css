@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+
+.font{
+    font-size: 18px;
+}
+.heading{
+    font-size: 60px;
+    font-weight: bold
+}
+.bgcolor{
+    background-color: #F5F5F5;
+    
+}
+
+.client-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center; 
+}
+
+
+
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.4),
+    transparent
+  );
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+
+.project-card .p-3 {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+.text-card {
+  position: relative;
+  overflow: hidden;
+  background: #F5F5F5;     
+  color: #000;           
+  transition: all 0.3s ease;
+}
+
+.text-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.text-card:hover {
+  background: #24286B;   
+  color: #fff;          
+}
+
+
+
+
+
+.testimonial-card {
+  position: relative;
+  background: #F5F5F5;
+  overflow: hidden;
+}
+
+
+.testimonial-text {
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+
+
+.quote-icon {
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  font-size: 50px;
+  color: #24286B;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: 0.4s ease;
+}
+
+
+.testimonial-card:hover .testimonial-text {
+  transform: translateX(40px);
+}
+
+.testimonial-card:hover .quote-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.nav-link-custom {
+  text-decoration: none;
+}
+
+.nav-link-custom:hover {
+  text-decoration: underline;
+}
+
+
+
+.nav-link-custom {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    gap: 12px !important;
+    margin-top: 15px;
+  }
+}
