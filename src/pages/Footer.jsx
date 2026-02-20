@@ -14,13 +14,13 @@ function Footer() {
 
       <div style={{ backgroundColor: '#24286B' }} className='rounded-top-5 p-5'>
 
-        <div className='d-flex justify-content-between text-light '>
-          <div className='me-5 ' style={{ width: '40%' }}>
-            <h1 className='mb-3 heading' >LOGO</h1>
+        <div className='row text-light'>
+          <div className='col-12 col-md-4 mb-4'>
+            <h1 className='mb-3 heading'>LOGO</h1>
             <p>Shaping the UAE’s future <br />with precision & passion</p>
           </div>
 
-          <div style={{ width: '20%' }} className='me-5 '>
+          <div className='col-6 col-md-2 mb-4'>
             <h5 className='mb-3'>Useful Links</h5>
             <div>
               <div className='mb-2'><a href="" className='text-light text-decoration-none'>Home</a></div>
@@ -31,7 +31,7 @@ function Footer() {
             </div>
           </div>
 
-          <div style={{ width: '20%' }} className='me-5 '>
+          <div className='col-6 col-md-2 mb-4'>
             <h5 className='mb-3'>Support</h5>
             <div>
               <div className='mb-2'><a href="" className='text-light text-decoration-none'>Privacy policy</a></div>
@@ -39,13 +39,13 @@ function Footer() {
               <div className='mb-2'><a href="" className='text-light text-decoration-none'>Contact Us</a></div>
             </div>
           </div>
-          <div>
 
-            <div className='me-5 text-light '>
+          <div className='col-12 col-md-4 mb-4'>
+            <div className='text-light mb-3'>
               <h5 className='mb-3'>Find Us</h5>
               <a href="https://maps.app.goo.gl/acGMFg34jcmVuTZ87" className='text-light text-decoration-none'>Bright Hurst Contracting LLC <br /> Office No: 1203 , Al Shatha Tower <br />Dubai Internet City, Dubai, UAE <br />P.O. Box: 123456</a>
             </div>
-            <div className='mt-5'>
+            <div className='mt-3'>
               <h5 className='mb-3'>Social Media Links</h5>
               <div className="d-flex gap-3">
                 {socials.map((item, index) => (

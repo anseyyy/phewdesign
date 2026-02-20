@@ -90,40 +90,42 @@ function Landing() {
 
           {/*  Layer 2  */}
           <div className="mt-5">
-            <Row>
+            <Row className="align-items-stretch">
 
               {/* LEFT */}
-              <Col lg={4} md={6} className="d-flex flex-column gap-3">
+              <Col lg={4} md={6} className="d-flex flex-column gap-3 gap-lg-4 mb-4 mb-lg-0">
 
-                <div className="text-light d-flex align-items-end feature-box" style={{ backgroundColor: "#24286B" }}>
+                <div className="text-light d-flex align-items-end feature-box flex-fill rounded-3" style={{ backgroundColor: "#24286B" }}>
                   <h1>Why <br /> Choose Us!</h1>
                 </div>
 
-                <div className="text-card feature-box">
-                  <img src="./images/expe.png" width="50" height="50" alt="" />
-                  <p className="fw-bold mt-3">End-to-End Expertise</p>
-                  <p>
-                    From interior fit-outs to MEP and civil works, we offer fully
-                    integrated solutions under one roof.
-                  </p>
+                <div className="text-card feature-box flex-fill d-flex flex-column justify-content-center">
+                  <div>
+                    <img src="./images/expe.png" width="50" height="50" alt="" />
+                    <p className="fw-bold mt-3">End-to-End Expertise</p>
+                    <p className="mb-0">
+                      From interior fit-outs to MEP and civil works, we offer fully
+                      integrated solutions under one roof.
+                    </p>
+                  </div>
                 </div>
 
               </Col>
 
               {/* slide show using carousel */}
-              <Col lg={4} md={12} className="d-flex justify-content-center">
-                <div id="workerCarousel" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
-                  <div className="carousel-inner">
+              <Col lg={4} md={12} className="d-flex justify-content-center mb-4 mb-lg-0">
+                <div id="workerCarousel" className="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="2000">
+                  <div className="carousel-inner h-100 overflow-hidden rounded-3">
 
-                    <div className="carousel-item active">
+                    <div className="carousel-item active h-100">
                       <img src="./images/worker1.jpg" className="worker-img" alt="" />
                     </div>
 
-                    <div className="carousel-item">
+                    <div className="carousel-item h-100">
                       <img src="./images/worker.jpg" className="worker-img" alt="" />
                     </div>
 
-                    <div className="carousel-item">
+                    <div className="carousel-item h-100">
                       <img src="./images/chair.jpg" className="worker-img" alt="" />
                     </div>
 
@@ -132,22 +134,26 @@ function Landing() {
               </Col>
 
               {/* RIGHT */}
-              <Col lg={4} md={6} className="d-flex flex-column gap-3">
+              <Col lg={4} md={6} className="d-flex flex-column gap-3 gap-lg-4">
 
-                <div className="text-card feature-box">
-                  <img src="./images/people.png" width="50" height="50" alt="" />
-                  <p className="fw-bold mt-3">Client-Centric Approach</p>
-                  <p>
-                    Every project is customized to align with your vision.
-                  </p>
+                <div className="text-card feature-box flex-fill d-flex flex-column justify-content-center">
+                  <div>
+                    <img src="./images/people.png" width="50" height="50" alt="" />
+                    <p className="fw-bold mt-3">Client-Centric Approach</p>
+                    <p className="mb-0">
+                      Every project is customized to align with your vision.
+                    </p>
+                  </div>
                 </div>
 
-                <div className="text-card feature-box">
-                  <img src="./images/tick.png" width="50" height="50" alt="" />
-                  <p className="fw-bold mt-3">Uncompromising Quality</p>
-                  <p>
-                    Premium materials and proven techniques ensure durability.
-                  </p>
+                <div className="text-card feature-box flex-fill d-flex flex-column justify-content-center">
+                  <div>
+                    <img src="./images/tick.png" width="50" height="50" alt="" />
+                    <p className="fw-bold mt-3">Uncompromising Quality</p>
+                    <p className="mb-0">
+                      Premium materials and proven techniques ensure durability.
+                    </p>
+                  </div>
                 </div>
 
               </Col>
@@ -163,9 +169,9 @@ function Landing() {
 
 
       {/*  Our Project */}
-      <div style={{ height: '100vh' }}>
-        <div style={{ backgroundColor: "#24286B", height: '620px', padding: "80px 0" }}>
-          <div style={{ margin: "0 80px" }}>
+      <div style={{ minHeight: '100vh', height: 'auto' }}>
+        <div className="py-5 project-section-bg">
+          <div className="mx-3 mx-md-4 mx-lg-5 px-lg-4">
 
 
             <a href="#Project" className="text-decoration-none text-light" style={{ opacity: 0.6, fontSize: "14px" }}>
@@ -173,18 +179,18 @@ function Landing() {
             </a>
 
 
-            <div className="text-light" style={{ display: "flex", gap: "60px", marginTop: "40px" }} >
+            <div className="text-light d-flex flex-column flex-lg-row gap-4 gap-lg-5 mt-4 mt-lg-5" >
 
               {/* LEFT */}
-              <div style={{ flex: 1 }}>
+              <div className="flex-fill" style={{ flex: 1 }}>
 
                 <h1 style={{ fontWeight: "500", lineHeight: "1.3" }}>
-                  Milestones That Define <br />
+                  Milestones That Define <br className="d-none d-lg-block" />
                   Our Journey of Excellence
                 </h1>
 
                 {/* Image  */}
-                <div className='project-card' style={{ marginTop: "50px", height: "420px", width: "100%", backgroundImage: "url(/images/chair.jpg)", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }} >
+                <div className='project-card mt-4 mt-lg-5' style={{ height: "420px", width: "100%", backgroundImage: "url(/images/chair.jpg)", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }} >
 
                   <div className='p-3' style={{ position: "absolute", bottom: "20px", left: "20px", color: "white", zIndex: 2 }}>
                     <p className='fw-bold mb-0'>Cube Studio</p>
@@ -196,7 +202,7 @@ function Landing() {
               </div>
 
               {/* RIGHT */}
-              <div style={{ flex: 1 }}>
+              <div className="flex-fill mt-3 mt-lg-0" style={{ flex: 1 }}>
 
                 <p style={{ maxWidth: "500px", opacity: 0.8, lineHeight: "1.7" }}>
                   Each completed project reflects our commitment to quality, innovation,
@@ -206,7 +212,7 @@ function Landing() {
                 </p>
 
                 {/* Image*/}
-                <div className='project-card' style={{ marginTop: "50px", height: "420px", width: "100%", backgroundImage: "url(/images/building.jpg)", backgroundPosition: "center", position: "relative" }} >
+                <div className='project-card mt-4 mt-lg-5' style={{ height: "420px", width: "100%", backgroundImage: "url(/images/building.jpg)", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }} >
 
                   <div className='p-3' style={{ position: "absolute", bottom: "20px", left: "20px", color: "white", zIndex: 2 }}>
                     <p className='fw-bold mb-0'>Al Marina Tower</p>
@@ -228,17 +234,17 @@ function Landing() {
 
 
       {/*  Testimonials */}
-      <div className='m-5 p-5'>
+      <div className='m-lg-5 p-lg-5 m-3 p-3'>
         <a href="#testimonials" className='text-decoration-none text-dark opacity-25'>• Testimonials</a>
         <div>
-          <h1 className='text-dark mt-5'>Voices of Trust That Reflect Our <br /> Commitment and Craftsmanship</h1>
+          <h1 className='text-dark mt-4 mt-lg-5'>Voices of Trust That Reflect Our <br className="d-none d-lg-block" /> Commitment and Craftsmanship</h1>
 
           <div>
-            <Row className='mt-5 d-flex align-items-stretch'>
+            <Row className='mt-4 mt-lg-5 d-flex align-items-stretch'>
 
               {/*  card1 */}
-              <Col md={4} className="d-flex flex-column gap-3">
-                <div className="p-5 mt-5 testimonial-card" style={{ width: "412px" }}>
+              <Col lg={4} md={12} className="d-flex flex-column gap-3 mb-4 mb-lg-0 align-items-center align-items-lg-start">
+                <div className="p-4 p-md-5 mt-lg-5 testimonial-card w-100" style={{ maxWidth: "412px" }}>
 
 
                   <div className="quote-icon">❝</div>
@@ -254,7 +260,7 @@ function Landing() {
                   <hr />
 
                   <div className="d-flex gap-3 mt-1">
-                    <img src="./images/client1.jpg" alt="" className="client-img" />
+                    <img src="./images/client1.jpg" alt="" className="client-img flex-shrink-0" />
                     <div>
                       <p className="fw-bold mb-0">Mohammed Khalid,</p>
                       <p className="mb-0">Project Manager, GulfTech Engineering</p>
@@ -266,8 +272,8 @@ function Landing() {
 
 
               {/*  card2 */}
-              <Col md={4} className="d-flex flex-column gap-3">
-                <div className="p-5 testimonial-card" style={{ width: "412px" }}>
+              <Col lg={4} md={12} className="d-flex flex-column gap-3 mb-4 mb-lg-0 align-items-center align-items-lg-start">
+                <div className="p-4 p-md-5 testimonial-card w-100" style={{ maxWidth: "412px" }}>
 
 
                   <div className="quote-icon">❝</div>
@@ -282,7 +288,7 @@ function Landing() {
                   <hr />
 
                   <div className="d-flex gap-3 mt-1">
-                    <img src="./images/client2.jpg" alt="" className="client-img" />
+                    <img src="./images/client2.jpg" alt="" className="client-img flex-shrink-0" />
                     <div>
                       <p className="fw-bold mb-0">Aisha Rahman,</p>
                       <p className="mb-0">Managing Director, Al Noor</p>
@@ -293,7 +299,7 @@ function Landing() {
 
                 {/* left & right Button */}
 
-                <div className='d-flex justify-content-center mt-5'>
+                <div className='d-flex justify-content-center mt-3 mt-lg-5 w-100' style={{ maxWidth: "412px" }}>
 
                   <button style={{ borderRadius: "50%", width: "50px", height: "50px", borderColor: "#24286B", backgroundColor: "#fff", color: "#24286B" }} className='btn btn-outline-dark me-5'>
                     <FontAwesomeIcon icon={faArrowLeft} />
@@ -309,8 +315,8 @@ function Landing() {
 
 
               {/* card3 */}
-              <Col md={4} className="d-flex flex-column gap-3">
-                <div className="p-5 mt-5 testimonial-card" style={{ width: "412px" }}>
+              <Col lg={4} md={12} className="d-flex flex-column gap-3 mb-4 mb-lg-0 align-items-center align-items-lg-start">
+                <div className="p-4 p-md-5 mt-lg-5 testimonial-card w-100" style={{ maxWidth: "412px" }}>
 
 
                   <div className="quote-icon">❝</div>
@@ -325,7 +331,7 @@ function Landing() {
                   <hr />
 
                   <div className="d-flex gap-3 mt-1">
-                    <img src="./images/client3.jpg" alt="" className="client-img" />
+                    <img src="./images/client3.jpg" alt="" className="client-img flex-shrink-0" />
                     <div>
                       <p className="fw-bold mb-0">Sara Al Farsi,</p>
                       <p className="mb-0">Homeowner, Jumeirah Dubai</p>
@@ -347,21 +353,20 @@ function Landing() {
 
 
       {/*  form */}
-      <div className='m-5 p-5'>
+      <div className='m-lg-5 p-lg-5 m-3 p-3'>
         <a href="#contactus" className='text-decoration-none text-dark opacity-25'>• Contact Us</a>
         <div className='mt-5'>
           <h1 className='text-dark'>Connect with Bright Hurst</h1>
 
-          <div className='p-5'>
-            <div style={{ backgroundColor: '#F5F5F5' }} className='d-flex rounded-3'>
-
+          <div className='p-lg-5 p-0 mt-4'>
+            <div style={{ backgroundColor: '#F5F5F5' }} className='d-flex flex-column flex-lg-row rounded-3'>
               {/*  form part 1 */}
 
-              <div className='p-3 m-5  rounded-3 text-light' style={{ width: '50%', backgroundColor: '#24286B', backgroundImage: 'linear-gradient(to top, #01098B 0%, #01098B 100%)' }}>
-                <h1 className='m-5'> We’re Just a <br /> Message Away</h1>
+              <div className='p-md-5 p-4 m-lg-5 m-3 rounded-3 text-light w-100 flex-fill' style={{ backgroundColor: '#24286B', backgroundImage: 'linear-gradient(to top, #01098B 0%, #01098B 100%)' }}>
+                <h1 className='mb-5'> We’re Just a <br /> Message Away</h1>
 
-                <div className='m-5 text-light d-flex gap-5'>
-                  <div> <i class="fa fa-phone" aria-hidden="true"></i> </div>
+                <div className='my-4 text-light d-flex gap-4'>
+                  <div> <i className="fa fa-phone" aria-hidden="true"></i> </div>
                   <div>
                     <p>Call : <br />
                       +971 XXXXXXXXX <br />
@@ -370,8 +375,8 @@ function Landing() {
                 </div>
 
 
-                <div className='m-5 text-light d-flex gap-5'>
-                  <div> <i class="fa fa-envelope-o"></i> </div>
+                <div className='my-4 text-light d-flex gap-4'>
+                  <div> <i className="fa fa-envelope-o"></i> </div>
                   <div>
                     <p>Mail : <br />
                       brighthurst123@gmail.com</p>
@@ -379,11 +384,11 @@ function Landing() {
                 </div>
 
 
-                <div className='m-5 text-light d-flex gap-5'>
-                  <div> <i class="fa fa-id-card-o"></i> </div>
+                <div className='my-4 text-light d-flex gap-4'>
+                  <div> <i className="fa fa-id-card-o"></i> </div>
                   <div>
                     <p>Head Office : <br />
-                      Bright Hurst Contracting LLCOffice No: 1203, Al Shatha TowerDubai Internet City, Dubai, UAEP.O. Box: 123456</p>
+                      Bright Hurst Contracting LLC<br />Office No: 1203, Al Shatha Tower<br />Dubai Internet City, Dubai, UAE<br />P.O. Box: 123456</p>
                   </div>
                 </div>
 
@@ -392,16 +397,16 @@ function Landing() {
 
 
               {/*  form part 2 */}
-              <div className='p-5 m-5 rounded' style={{ width: '50%', backgroundColor: '#F5F5F5', height: '100%' }}>
+              <div className='p-md-5 p-4 m-lg-5 m-3 rounded w-100 flex-fill' style={{ backgroundColor: '#F5F5F5', height: '100%' }}>
                 <form action="" >
 
 
-                  <div className="mb-3 d-flex gap-1">
-                    <div className="flex-fill me-5">
+                  <div className="mb-3 d-flex flex-column flex-md-row gap-3">
+                    <div className="w-100">
                       <label htmlFor="name" className="form-label">Name</label>
                       <input type="text" className="form-control" style={{ backgroundColor: '#F5F5F5' }} id="name" placeholder="Name" />
                     </div>
-                    <div className="flex-fill">
+                    <div className="w-100">
                       <label htmlFor="email" className="form-label">E mail ID</label>
                       <input type="email" className="form-control" style={{ backgroundColor: '#F5F5F5' }} id="email" placeholder="E mail ID" />
                     </div>
@@ -410,8 +415,8 @@ function Landing() {
 
 
                   <div className='mb-3'>
-                    <label htmlFor="email" className="form-label">Subject</label>
-                    <input type="email" className="form-control " style={{ backgroundColor: '#F5F5F5' }} id="email" placeholder='Email' />
+                    <label htmlFor="subject" className="form-label">Subject</label>
+                    <input type="text" className="form-control " style={{ backgroundColor: '#F5F5F5' }} id="subject" placeholder='Subject' />
                   </div>
                   <div className='mb-3'>
                     <label htmlFor="message" className="form-label">Message</label>
@@ -422,6 +427,7 @@ function Landing() {
               </div>
 
             </div>
+
 
           </div>
 
@@ -434,15 +440,10 @@ function Landing() {
 
 
       {/*  map */}
-      <div >
-
-        <div style={{ position: "relative", height: "30%", width: "100%", paddingTop: "30%" }}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260295.3021266677!2d55.16003746829559!3d24.8915416843505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1771499117349!5m2!1sen!2sin"
-            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0, }}
-            allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Google Maps Embed"></iframe>
-        </div>
-
+      <div className="map-responsive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d260295.3021266677!2d55.16003746829559!3d24.8915416843505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1771499117349!5m2!1sen!2sin"
+          allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Google Maps Embed"></iframe>
       </div>
 
 
